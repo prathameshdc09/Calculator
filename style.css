@@ -5,16 +5,28 @@ body{
     align-items: center;
     height: 100vh;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    margin-top: 20px;
+}
 .calculator{
-    padding: 20px;
-    border-radius: 10px;
+    width:320px;
+    padding:20px;
+    background:#f5f5f5;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 #display{
-
-    width: 100%;
-    height: 60px;
-    font-size: 25px;
-    text-align: center;
+    width:100%;
+    height:60px;
+    font-size:30px;
+    text-align:right;
+    padding-right:10px;
+    margin-bottom:15px;
 }
 .buttons{
     display: grid;
@@ -28,4 +40,23 @@ button{
     font-size:20px;
     cursor:pointer;
     
+}
+.btn{
+    width:100%;
+    height:60px;
+    font-size:25px;
+}
+
+.operator{
+    background:orange;
+}
+
+.equal{
+    background:green;
+    color:white;
+}
+
+.clear{
+    background:red;
+    color:white;
 }
